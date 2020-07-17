@@ -44,6 +44,7 @@ img#picture-subtitle{
 #menu a{
     text-decoration: none;
     color: black;
+   
  
 }
 
@@ -51,7 +52,26 @@ img#picture-subtitle{
     color: rgb(255, 255, 255);
 
 }
+
 /*Nav*/
 
+body{
+    background-color:#dddddd;
+}
+
+div#interface{
+    width: 900px;
+    background: white;
+    margin: -20px auto 0px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+}
+/*img*/
+#glass{
+    position: absolute;
+    left: 780px;
+    top: 40px
+}
+/*img*/
 
 
