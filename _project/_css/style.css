@@ -1,94 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
-@font-face{
+@font-face {
     font-family: 'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
 
-p{
-    text-align: justify;
-    text-indent: 50px;
-  
-}
-img#picture-subtitle{
-    
-    position: relative;
-    border: 4px solid white;
-    box-shadow: 1px 1px 4px black;
-    width: 100%;
-    height:100%;
-    max-width: 70%;
-    left: 10%;
-    
 
-
-
-}
 /*Nav*/
-#menu ul{
+
+#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: relative;
     bottom: 250px;
     left: 320px;
-
 }
 
-#menu li{
-    display:inline-block;
+#menu li {
+    display: inline-block;
     background-color: rgba(128, 128, 128, 0.274);
     padding: 10px;
     margin: 2px;
     text-decoration: none;
     border-radius: 4pt;
-       
 }
 
-#menu li:hover{
+#menu li:hover {
     background: #606060;
     transition: 1s;
 }
 
-#menu a{
+#menu a {
     text-decoration: none;
     color: black;
-   
- 
 }
 
-#menu a:hover{
+#menu a:hover {
     color: rgb(255, 255, 255);
-
 }
 
 /*Nav*/
 
-body{
-    background-color:#dddddd;
+body {
+    background-color: #dddddd;
+    font-family: Arial, sans-serif;
 }
 
-div#interface{
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+div#interface {
     width: 900px;
     background: white;
     margin: -20px auto 0px auto;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
 }
-/*img*/
-#glass{
+
+
+/*media*/
+
+
+#glass {
     position: relative;
     left: 780px;
     bottom: 40px
 }
-/*img*/
 
-/*header*/
-#header{
+
+img#picture-subtitle {
+    position: relative;
+    border: 4px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    left: 10%;
+}
+
+/*media*/
+
+/*blocks*/
+
+#header {
     border-bottom: 1px #606060 solid;
     height: 150px;
     background: url("../_images/glass-logo-sma.jpg") no-repeat 0px 80px;
 }
-#header h1{
+
+#header h1 {
     font-family: FonteLogo;
     font-size: 30pt;
     color: #606060;
@@ -97,40 +100,114 @@ div#interface{
     margin-bottom: 0px;
 }
 
-#header h2{
+#header h2 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
     color: #888888;
     padding: 0px;
     margin-top: 0px;
+}
+
+
+#section {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px #606060 solid;
+    padding-right: 15px;
+}
+
+#article h1 {
+    font-size: 20pt;
+    font-family: FonteLogo, sans-serif;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+#article h2 {
+    font-size: 13pt;
+    background-color: #dddddd;
+    color: #606060;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+#article h3 {
+    font-size: 12px;
+    color: #606060;
 
 }
+
+#aside { 
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#aside h1{
+    font-family: FonteLogo, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0pt;
+}
+#aside h2{
+    font-family: FonteLogo, sans-serif;
+    background-color: #606060;
+    font-size: 13pt;
+    color:white;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+#footer {
+    clear: both;
+    border-top: 1px #606060 solid;
+}
+
+#footer p {
+    text-align: center;
+}
+
+/*blocks*/
+
+
+
 /*Table*/
-table{
+
+table {
     border-spacing: 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.cl{
- color: white;
- background: #606060;
+.cl {
+    color: white;
+    background: #606060;
 }
-.cr{
+
+.cr {
     background-color: #cecece;
     font-size: 13pt;
 }
 
-table td{
+table td {
     border: 1px solid #474141;
     padding: 10px;
 }
 
-table caption{
+table caption {
     font-weight: bold;
     color: #606060;
 }
-span{
+
+span {
     display: block;
     float: right;
     color: #000000;
@@ -142,42 +219,24 @@ span{
 
 /*Table*/
 
-/*header*/
-
-/*blocks*/
-#section{
-    display: block;
-    width: 520px;
-    float: left;
-    border-right: 1px #606060 solid;
-    padding-right: 15px;
-    
-}
-#aside{
-    display: block;
-    width: 350px;
-    float: right;
-
-}
-
-#footer{
-    clear: both;
-    border-top: 1px #606060 solid;
-}
-#footer p{
-    text-align: center;
-}
-
-/*blocks*/
-
 /*Links*/
-#Linkedin{
+
+a{
     text-decoration: none;
-    color:#0e76a8
+    color: #606060;
 }
-#Github{
+a:hover{
+    text-decoration: underline;
+}
+
+#Linkedin {
+    text-decoration: none;
+    color: #0e76a8
+}
+
+#Github {
     text-decoration: none;
     color: #24292e;
 }
-/*Links*/
 
+/*Links*/
