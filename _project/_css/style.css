@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
 
 p{
     text-align: justify;
@@ -80,7 +86,7 @@ div#interface{
     background: url("../_images/glass-logo-sma.jpg") no-repeat 0px 80px;
 }
 #header h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: FonteLogo;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
@@ -89,7 +95,7 @@ div#interface{
 }
 
 #header h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
     color: #888888;
     padding: 0px;
