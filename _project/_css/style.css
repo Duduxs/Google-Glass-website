@@ -105,6 +105,43 @@ div#interface{
     margin-top: 0px;
 
 }
+/*Table*/
+table{
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cl{
+ color: white;
+ background: #606060;
+}
+.cr{
+    background-color: #cecece;
+    font-size: 13pt;
+}
+
+table td{
+    border: 1px solid #474141;
+    padding: 10px;
+}
+
+table caption{
+    font-weight: bold;
+    color: #606060;
+}
+span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-weight: normal;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+
+/*Table*/
+
 /*header*/
 
 /*blocks*/
@@ -143,3 +180,4 @@ div#interface{
     color: #24292e;
 }
 /*Links*/
+
