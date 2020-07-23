@@ -43,7 +43,6 @@
 /*Nav*/
 
 body {
-    background-color: #dddddd;
     font-family: Arial, sans-serif;
 }
 
@@ -52,6 +51,7 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
+
 
 div#interface {
     width: 900px;
