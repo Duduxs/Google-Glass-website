@@ -8,12 +8,13 @@
 
 /*Nav*/
 
+
 #menu ul {
     list-style: none;
     text-transform: uppercase;
     position: relative;
-    bottom: 250px;
-    left: 320px;
+    bottom: 110px;
+    left: 310px;
 }
 
 #menu li {
@@ -67,7 +68,7 @@ div#interface {
 #glass {
     position: relative;
     left: 780px;
-    bottom: 40px
+    bottom: 100px
 }
 
 

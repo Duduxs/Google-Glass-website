@@ -23,18 +23,17 @@
             <h1>Google Glass</h1>
             <h2>The google revolution is coming</h2>
 
-            <img src="../_images/glass-black-sma.png" alt="photo" id='glass'>
-
             <nav id="menu">
-                <ul>
-                    <li><a href="index.html" rel="next">Home</a></li>
-                    <li><a href="specs.html" rel="next">Specifications</a></li>
-                    <li><a href="photos.html" rel="next">Pictures</a></li>
-                    <li><a href="multimidia.html" rel="next">Multimedia</a></li>
-                    <li><a href="about.html" rel="next">About</a></li>
-
+                <ul onmouseout="changePicture('../_images/glass-black-sma.png')">
+                    <li onmouseover="changePicture('../_images/home.png')"><a href="index.html" rel="next">Home</a></li>
+                    <li onmouseover="changePicture('../_images/specifi.png')"><a href="specs.html" rel="next">Specifications</a></li>
+                    <li onmouseover="changePicture('../_images/photos.png')"><a href="photos.html" rel="next">Pictures</a></li>
+                    <li onmouseover="changePicture('../_images/multimidia.png')"><a href="multimidia.html" rel="next">Multimedia</a></li>
+                    <li onmouseover="changePicture('../_images/contact.png')"><a href="about.html" rel="next">About</a></li>
                 </ul>
             </nav>
+            
+            <img src="../_images/glass-black-sma.png" alt="photo" id='glass'>
 
         </header>
 
@@ -152,5 +151,7 @@
         </footer>
     </div>
 </body>
+
+<script src="../_javascript/functions.js"></script>
 
 </html>

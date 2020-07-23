@@ -1,14 +1,41 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="en">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Glass Website</title>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/114/114654.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../_css/style.css">
+
+</head>
+
+<body id="main">
+
+    <div id='interface'>
+
+
+
+        <header id="header">
+
+            <h1>Google Glass</h1>
+            <h2>The google revolution is coming</h2>
+
+            <nav id="menu">
+                <ul onmouseout="changePicture('../_images/multimidia.png')">
+                    <li onmouseover="changePicture('../_images/home.png')"><a href="index.html" rel="next">Home</a></li>
+                    <li onmouseover="changePicture('../_images/specifi.png')"><a href="specs.html" rel="next">Specifications</a></li>
+                    <li onmouseover="changePicture('../_images/photos.png')"><a href="photos.html" rel="next">Pictures</a></li>
+                    <li onmouseover="changePicture('../_images/multimidia.png')"><a href="multimidia.html" rel="next">Multimedia</a></li>
+                    <li onmouseover="changePicture('../_images/contact.png')"><a href="about.html" rel="next">About</a></li>
+                </ul>
+            </nav>
+            
+            <img src="../_images/glass-black-sma.png" alt="photo" id='glass'>
+
+        </header>
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +48,20 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<footer id='footer'>
+    <p>
+        &copy; Copyright 2020 - by Eduardo José <br>
+    </p>
+    <p>
+        <a href="https://www.linkedin.com/in/eduarddojose/" target="_blank" rel="external"
+            id="Linkedin">Linkedin</a>
+
+        <a href="https://github.com/Duduxs" target="_blank" rel="external" id="Github">Github</a>
+    </p>
+</footer>
+</div>
+</body>
+
+<script src="../_javascript/functions.js"></script>
+
+</html>

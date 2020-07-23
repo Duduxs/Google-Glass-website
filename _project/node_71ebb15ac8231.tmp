@@ -1,0 +1,6 @@
+let valor = 6;
+
+while(valor % 2 == 0 || valor != 0){
+    console.log(valor+"\r\n");
+    valor--;
+}
