@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/114/114654.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="../_css/media.css">
 
 </head>
 
@@ -26,40 +27,55 @@
             <nav id="menu">
                 <ul onmouseout="changePicture('../_images/multimidia.png')">
                     <li onmouseover="changePicture('../_images/home.png')"><a href="index.html" rel="next">Home</a></li>
-                    <li onmouseover="changePicture('../_images/specifi.png')"><a href="specs.html" rel="next">Specifications</a></li>
-                    <li onmouseover="changePicture('../_images/photos.png')"><a href="photos.html" rel="next">Pictures</a></li>
-                    <li onmouseover="changePicture('../_images/multimidia.png')"><a href="multimidia.html" rel="next">Multimedia</a></li>
-                    <li onmouseover="changePicture('../_images/contact.png')"><a href="about.html" rel="next">About</a></li>
+                    <li onmouseover="changePicture('../_images/specifi.png')"><a href="specs.html"
+                            rel="next">Specifications</a></li>
+                    <li onmouseover="changePicture('../_images/photos.png')"><a href="photos.html"
+                            rel="next">Pictures</a></li>
+                    <li onmouseover="changePicture('../_images/multimidia.png')"><a href="multimidia.html"
+                            rel="next">Multimedia</a></li>
+                    <li onmouseover="changePicture('../_images/contact.png')"><a href="about.html" rel="next">About</a>
+                    </li>
                 </ul>
             </nav>
-            
+
             <img src="../_images/glass-black-sma.png" alt="photo" id='glass'>
 
         </header>
+        <section id='body'>
+            </header>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+            <article id="article">
+                <h3>Glass > Multimedia</h3>
+                <h1>Audio and videos</h1>
+            </article>
 
+            <div id='tv'>
+                <audio preload='metadata' controls>
+                    <source src="../_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                    <p>Sorry, we couldn't load the media. <a href="../_media/2009-lovers-carvings-bibio.mp3"
+                            download="lovers-carving-audio" type='audio/mpeg'></a></p>
+                </audio>
 
-Áudio e Vídeo
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+            </div>
 
-<footer id='footer'>
-    <p>
-        &copy; Copyright 2020 - by Eduardo José <br>
-    </p>
-    <p>
-        <a href="https://www.linkedin.com/in/eduarddojose/" target="_blank" rel="external"
-            id="Linkedin">Linkedin</a>
+        </section>
 
-        <a href="https://github.com/Duduxs" target="_blank" rel="external" id="Github">Github</a>
-    </p>
-</footer>
-</div>
+        <footer id='footer'>
+            <p>
+                &copy; Copyright 2020 - by Eduardo José <br>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/eduarddojose/" target="_blank" rel="external"
+                    id="Linkedin">Linkedin</a>
+
+                <a href="https://github.com/Duduxs" target="_blank" rel="external" id="Github">Github</a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 <script src="../_javascript/functions.js"></script>

@@ -1,0 +1,24 @@
+#tv{
+    height: 580px;
+    width: 900px;
+    margin: auto;
+    background: url("../_images/radio-tv.png") no-repeat;
+
+}
+
+#tv audio{
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 490px;
+    width: 300px;
+}
+
+#tv iframe{
+    display: block;
+    position: relative;
+    left: 88px;
+    top: 20px;
+    width: 440px;
+    height: 330px;
+}
