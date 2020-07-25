@@ -1,0 +1,96 @@
+/*UL*/
+#album{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+/*UL*/
+
+#album li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+}
+
+#album li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 9pt;
+    padding: 5px;
+}
+
+li:hover{
+    -webkit-transform:  scale(1.5);
+    -webkit-transition: all 0.3s ease-in;
+}
+
+#album li:hover span{
+    opacity: 1;
+}
+
+#pick01{
+    background: url(../_images/gallery-01.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#pick01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+#pick02{
+    background: url(../_images/gallery-02.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#pick02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+#pick03{
+    background: url(../_images/gallery-03.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#pick03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+#pick04{
+    background: url(../_images/gallery-04.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#pick04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+#pick05{
+    background: url(../_images/gallerry-05.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#pick05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+#pick06{
+    background: url(../_images/gallerry-06.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+#pick06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
