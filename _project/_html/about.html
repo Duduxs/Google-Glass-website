@@ -36,40 +36,59 @@
             <img src="../_images/glass-black-sma.png" alt="photo" id='glass'>
 
         </header>
+        <section id='body'>
+        <article id="article">
+            <h3>Glass > About</h3>
+            <h1>Contact Form</h1>
+        </article>
+    </section>
 
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+<form>
+    <fieldset id='user'>
+        <legend>
+            User's Data
+        </legend>
+            <p><label for="txtName">Name:</label> <input type="text" name="tName" id="txtName" maxlength="35" size="20" ></p>
+            <p><label for="txtPassword">Password:</label> <input type="password" name="tPassword" id="txtPassword" maxlength="15" size="15" ></p>
+            <p><label for="txtEmail">E-mail:</label> <input type="email" name="tEmail" id="txtEmail" maxlength="20" size="20"></p>
+            <fieldset id='genre'>
+                <legend>Gender:</legend>
+                <label for="radGenderM">Mas</label> <input type="radio" name="rGender" id="radGenderM"><br>
+                <label for="radGenderF">Fem</label> <input type="radio" name="rGender"id="radGenderF" checked>
+            </fieldset>
+            <p>Birthday Date: <input type="date" name="tDate" id="txtDate"></p>
+    </fieldset>
+    
+    <fieldset id='address'>
+        <legend>User's Address</legend>
+            <p>Address: <input type="text" name="tAddress" id="txtAddress" size='13' maxlength="80"></p>
+            <p>Number: <input type="number" name="tNumber" id="txtNumber" size='13'min='0' max='9999'></p>
+            <p>State: <input type="text" name="tState" id="txtState" size='13' maxlength="14"></p>
+            <p>City: <input type="text" name="tCity" id="txtCity" size='13' maxlength="14"></p>
+        
+    </fieldset>
+    <fieldset id='message'>
+        <legend>
+            Mensagem do Usuário
+        </legend>
+            Grau de Urgência:
+            Mensagem:
+    </fieldset>
+    
+    <fieldset id='order'>
+        <legend>
+            Quero um Google Glass
+        </legend>
+            Gostaria de adquirir um Google Glass quando disponível
+            Cor:
+            Quantidade:
+            Preço Total: R$
+    </fieldset>
+    
+    
+    [BOTÃO ENVIAR]
+</form>
 
 <footer id='footer'>
     <p>
