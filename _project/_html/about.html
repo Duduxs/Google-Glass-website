@@ -9,14 +9,13 @@
     <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/114/114654.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="../_css/style.css">
+    <link rel="stylesheet" href="../_css/form.css">
 
 </head>
 
 <body id="main">
 
     <div id='interface'>
-
-
 
         <header id="header">
 
@@ -26,82 +25,160 @@
             <nav id="menu">
                 <ul onmouseout="changePicture('../_images/contact.png')">
                     <li onmouseover="changePicture('../_images/home.png')"><a href="index.html" rel="next">Home</a></li>
-                    <li onmouseover="changePicture('../_images/specifi.png')"><a href="specs.html" rel="next">Specifications</a></li>
-                    <li onmouseover="changePicture('../_images/photos.png')"><a href="photos.html" rel="next">Pictures</a></li>
-                    <li onmouseover="changePicture('../_images/multimidia.png')"><a href="multimidia.html" rel="next">Multimedia</a></li>
+                    <li onmouseover="changePicture('../_images/specifi.png')"><a href="specs.html"rel="next">Specifications</a></li>
+                    <li onmouseover="changePicture('../_images/photos.png')"><a href="photos.html"rel="next">Pictures</a></li>
+                    <li onmouseover="changePicture('../_images/multimidia.png')"><a href="multimidia.html"rel="next">Multimedia</a></li>
                     <li onmouseover="changePicture('../_images/contact.png')"><a href="about.html" rel="next">About</a></li>
                 </ul>
             </nav>
-            
+
             <img src="../_images/glass-black-sma.png" alt="photo" id='glass'>
 
         </header>
+
         <section id='body'>
-        <article id="article">
-            <h3>Glass > About</h3>
-            <h1>Contact Form</h1>
-        </article>
-    </section>
+            <article id="article">
+                <h3>Glass > About</h3>
+                <h1>Contact Form</h1>
+            </article>
+        </section>
 
 
-<form>
-    <fieldset id='user'>
-        <legend>
-            User's Data
-        </legend>
-            <p><label for="txtName">Name:</label> <input type="text" name="tName" id="txtName" maxlength="35" size="20" ></p>
-            <p><label for="txtPassword">Password:</label> <input type="password" name="tPassword" id="txtPassword" maxlength="15" size="15" ></p>
-            <p><label for="txtEmail">E-mail:</label> <input type="email" name="tEmail" id="txtEmail" maxlength="20" size="20"></p>
-            <fieldset id='genre'>
-                <legend>Gender:</legend>
-                <label for="radGenderM">Mas</label> <input type="radio" name="rGender" id="radGenderM"><br>
-                <label for="radGenderF">Fem</label> <input type="radio" name="rGender"id="radGenderF" checked>
+        <form method="POST" id='form' action="mailto:eduardo-142@hotmail.com" oninput='calc_total()'>
+
+            <fieldset id='user'>
+                <legend>User's Data</legend>
+
+                <p><label for="txtName">Name:</label> <input type="text" name="tName" id="txtName" maxlength="35" size="20"></p>
+                <p><label for="txtPassword">Password:</label> <input type="password" name="tPassword" id="txtPassword"maxlength="15" size="5"></p>
+                <p><label for="txtEmail">E-mail:</label> <input type="email" name="tEmail" id="txtEmail" maxlength="50"size="20"></p>
+                
+                <fieldset id='genre'>
+                    <legend>Gender:</legend>
+                    <label for="radGenderM">Mas</label> <input type="radio" name="rGender" id="radGenderM"><br>
+                    <label for="radGenderF">Fem</label> <input type="radio" name="rGender" id="radGenderF" checked>
+                </fieldset>
+
+                <p>Birthday Date: <input type="date" name="tDate" id="txtDate"></p>
+
             </fieldset>
-            <p>Birthday Date: <input type="date" name="tDate" id="txtDate"></p>
-    </fieldset>
-    
-    <fieldset id='address'>
-        <legend>User's Address</legend>
-            <p>Address: <input type="text" name="tAddress" id="txtAddress" size='13' maxlength="80"></p>
-            <p>Number: <input type="number" name="tNumber" id="txtNumber" size='13'min='0' max='9999'></p>
-            <p>State: <input type="text" name="tState" id="txtState" size='13' maxlength="14"></p>
-            <p>City: <input type="text" name="tCity" id="txtCity" size='13' maxlength="14"></p>
-        
-    </fieldset>
-    <fieldset id='message'>
-        <legend>
-            Mensagem do Usuário
-        </legend>
-            Grau de Urgência:
-            Mensagem:
-    </fieldset>
-    
-    <fieldset id='order'>
-        <legend>
-            Quero um Google Glass
-        </legend>
-            Gostaria de adquirir um Google Glass quando disponível
-            Cor:
-            Quantidade:
-            Preço Total: R$
-    </fieldset>
-    
-    
-    [BOTÃO ENVIAR]
-</form>
 
-<footer id='footer'>
-    <p>
-        &copy; Copyright 2020 - by Eduardo José <br>
-    </p>
-    <p>
-        <a href="https://www.linkedin.com/in/eduarddojose/" target="_blank" rel="external"
-            id="Linkedin">Linkedin</a>
+            <fieldset id='address'>
+                <legend>User's Address</legend>
 
-        <a href="https://github.com/Duduxs" target="_blank" rel="external" id="Github">Github</a>
-    </p>
-</footer>
-</div>
+                <p><label for="txtAddress">Address:</label> <input type="text" name="tAddress" id="txtAddress" size='13'maxlength="80"></p>
+                <p><label for="txtNumb er">Number:</label> <input type="number" name="tNumber" id="txtNumber" size='13'min='0' max='9999'></p>
+
+                <p><label for="selectState">State:</label>
+                    <select name="selectState" id='selectState'>
+
+                        <option value="0">Select the State</option>
+                        <option value="DF">Distrito Federal</option>
+                        <optgroup label="Norte">
+                            <option value="AM">Amazonas</option>
+                            <option value="RR">Roraima</option>
+                            <option value="AP">Amapá</option>
+                            <option value="PA">Pará</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="AC">Acre</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="PI">Piauí</option>
+                            <option value="CE">Ceará</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="GO">Goiás</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espirito Santo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+
+                    </select></p>
+                <p><label for="txtCity">City: </label><input type="text" name="tCity" id="txtCity" size='13'maxlength="14" list='cities'></p>
+                <datalist id='cities'>
+
+                    <option value="Rio Branco"></option>
+                    <option value="Maceió"></option>
+                    <option value="Macapá"></option>
+                    <option value="Manaus"></option>
+                    <option value="Salvador"></option>
+                    <option value="Fortaleza"></option>
+                    <option value="Brasília"></option>
+                    <option value="Vitória"></option>
+                    <option value="Goiânia"></option>
+                    <option value="São Luís"></option>
+                    <option value="Cuiabá"></option>
+                    <option value="Campo Grande"></option>
+                    <option value="Belo Horizonte"></option>
+                    <option value="Belém"></option>
+                    <option value="João Pessoa"></option>
+                    <option value="Curitiba"></option>
+                    <option value="Recife"></option>
+                    <option value="Teresina"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Natal"></option>
+                    <option value="Porto Alegre"></option>
+                    <option value="Porto Velho"></option>
+                    <option value="Boa Vista"></option>
+                    <option value="Florianópolis"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Aracaju"></option>
+                    <option value="Palmas"></option>
+
+                </datalist>
+
+            </fieldset>
+
+            <fieldset id='message'>
+                <legend>User's message</legend>
+
+                <p><label for="rangeUrgency">Degree of urgency: </label><input type="range" name="rangeUrgency"id="rangeUrgency" min='0' max='10' step='2'></p>
+                <p><textarea name="txtAreaMsg" id="txtAreaMsg" cols="45" rows="5"placeholder="Type your message here"></textarea></p>
+
+            </fieldset>
+
+            <fieldset id='order'>
+                <legend>I want a Google Glass</legend>
+
+                <p><label for="checkBox">I'l like to get a Google Glass when his came available: </label> <input type="checkbox" name="checkBox" id="checkBox" checked></p>
+                <p><label for="color">Color: </label> <input type="color" name="color" id="color" value="#48C1F4"></p>
+                <p><label for="tNumber">Quantity: </label> <input type="number" name="tNumber" id="tNumber" min='0'max='5' value='0'></p>
+                <p><label for="txtTotalPrice">Total Price: R$</label> <input type="text" name="txtTotalPrice"id="txtTotalPrice" placeholder="Value" readonly>
+                </p>
+            
+            </fieldset>
+
+        <input type="button" value="Send" id='btnSend'>
+
+        </form>
+        <footer id='footer'>
+            
+            <p>&copy; Copyright 2020 - by Eduardo José <br></p>
+            <p>
+                <a href="https://www.linkedin.com/in/eduarddojose/" target="_blank" rel="external"id="Linkedin">Linkedin</a>
+                <a href="https://github.com/Duduxs" target="_blank" rel="external" id="Github">Github</a>
+            </p>
+             
+        </footer>
+    </div>
 </body>
 
 <script src="../_javascript/functions.js"></script>

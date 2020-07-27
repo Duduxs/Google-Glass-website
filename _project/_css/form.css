@@ -1,0 +1,45 @@
+form {
+    width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13;
+}
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px
+}
+
+fieldset#user {
+    background: url("../_images/icon-contact.png") no-repeat 95% 95%;
+}
+
+fieldset#address {
+    background: url("../_images/icon-address.png") no-repeat 95% 95%;
+}
+
+fieldset#message {
+    background: url("../_images/icon-message.png") no-repeat 95% 95%;
+}
+
+fieldset#order {
+    background: url("../_images/icon-order.png") no-repeat 95% 95%;
+}
+
+#btnSend {
+    height: 50px;
+    width: 100px;
+    margin-left: 220px;
+    margin-bottom: 10px;
+}

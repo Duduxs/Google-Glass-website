@@ -1,20 +1,16 @@
 @charset "UTF-8";
-
-
-p#specs{
+p#specs {
     text-align: center;
-    
- }
+}
 
-#content{
+#content {
     width: 1000px;
     margin: auto;
 }
 
-#frame-spec{
+#frame-spec {
     width: 400px;
     height: 280px;
     border: none;
     overflow: hidden;
 }
-

@@ -1,12 +1,11 @@
-#tv{
+#tv {
     height: 580px;
     width: 900px;
     margin: auto;
     background: url("../_images/radio-tv.png") no-repeat;
-
 }
 
-#tv audio{
+#tv audio {
     display: block;
     position: relative;
     left: 575px;
@@ -14,7 +13,7 @@
     width: 300px;
 }
 
-#tv iframe{
+#tv iframe {
     display: block;
     position: relative;
     left: 88px;
