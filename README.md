@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <img alt="Scene" src="_project/_images/glass-picture-man-woman.jpg">
+  <img alt="Collage" src="https://ik.imagekit.io/27ewoxssse/collage-google-glass_LlIwEsvQi.png"> 
 </p>
 
 ## :rocket: Technologies
