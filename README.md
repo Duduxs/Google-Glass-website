@@ -25,6 +25,8 @@
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#thumbsup-how-to-contribute">How To Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>	
+
 </p>
 
 <p align="center">
@@ -54,6 +56,8 @@ From your command line:
 $ git clone https://github.com/Duduxs/Google-Glass-website.git
 
 ```
+## :memo: License
+This project is under the MIT license. See the [LICENSE](https://github.com/Duduxs/Google-Glass-website/blob/master/LICENSE.txt) for more information.
 
 ## :thumbsup: How To Contribute
 
